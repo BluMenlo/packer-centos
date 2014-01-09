@@ -8,20 +8,19 @@
             "boot_wait": "5s",
             "disk_size": 40000,
             "guest_os_type": "RedHat_64",
-            "headless": true,
             "http_directory": "./http_directory",
-            "iso_checksum": "939fd1d87c11ffe7795324438b85adfb",
-            "iso_checksum_type": "md5",
-            "iso_url": "http://mirror.web-ster.com/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-netinstall.iso",
+            "iso_checksum": "d8aaf698408c0c01843446da4a20b1ac03d27f87aad3b3b7b7f42c6163be83b9",
+            "iso_checksum_type": "sha256",
+            "iso_url": "http://mirrors.kernel.org/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-netinstall.iso",
             "ssh_password": "vagrant",
             "ssh_username": "root",
-            "ssh_wait_timeout": "20m",
+            "ssh_wait_timeout": "10m",
             "type": "virtualbox-iso",
             "vboxmanage": [
                 ["modifyvm", "{{.Name}}", "--memory", "1024"],
                 ["modifyvm", "{{.Name}}", "--cpus", "2"]
             ],
-            "vm_name": "packer-centos-6_4-64"
+            "vm_name": "packer-centos-6_5-64"
         }
     ],
     "provisioners": [
